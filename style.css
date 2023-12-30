@@ -285,5 +285,9 @@ p{
 }
 
 .footer p{
-    color: #fff;
+    color: #fff; 
+}
+
+.footer p:nth-child(2){
+    font-size: .8rem;
 }
