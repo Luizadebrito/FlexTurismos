@@ -151,7 +151,7 @@ p{
 }
 
 .section_servicos h2{
-    font-size: 3rem ;
+    font-size: 2.7rem ;
 }
 
 .section_servicos  p {
@@ -224,7 +224,7 @@ p{
     color: #122A57;
     width: 100%;
     margin: 2rem ;  
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .planos_container{
@@ -294,7 +294,7 @@ p{
     font-size: .8rem;
 }
 
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     .apresentacao_container{
         flex-flow: row nowrap;
         justify-content: space-around;
@@ -324,6 +324,18 @@ p{
     .apresentacao_container {
         margin: 15px;
         padding: 0 20px;
+    }
+
+    .cabecalho_options li a{
+        font-size: 1.4rem;
+    }
+
+    .section_planos h2{
+        font-size: 3.5rem;
+    }
+
+    .section_servicos h2{
+        font-size: 3rem ;
     }
 
 
