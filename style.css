@@ -69,8 +69,9 @@ p{
 .botao_secundario{
     background: white;
     color: #122A57;
-    border-radius: 7px;
-    padding: 5px;
+    width: 200px;
+    border-radius: 15px;
+    padding: .5rem;
     margin: 10px;
 }
 
@@ -100,7 +101,7 @@ p{
 }
 
 .apresentacao_container #img_apresentacao {
-    width: 90%;
+    width: 100%;
     margin: 2rem auto 0;
 }
 
@@ -126,7 +127,7 @@ p{
     font-family: "open sans";
     padding: 0px 10px 0 0;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     /* margin-top: 20px;*/
 
 }
@@ -137,6 +138,7 @@ p{
     padding: .5rem 1rem 0;
     display: block;
 }
+
 
 /* section serviços */
 
@@ -149,7 +151,7 @@ p{
 }
 
 .section_servicos h2{
-    font-size: 2rem ;
+    font-size: 3rem ;
 }
 
 .section_servicos  p {
@@ -222,7 +224,7 @@ p{
     color: #122A57;
     width: 100%;
     margin: 2rem ;  
-    font-size: 2rem;
+    font-size: 3.5rem;
 }
 
 .planos_container{
@@ -290,4 +292,39 @@ p{
 
 .footer p:nth-child(2){
     font-size: .8rem;
+}
+
+@media screen and (min-width: 600px) {
+    .apresentacao_container{
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .container_servicos{
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+
+    .container_servicos .servico img{
+       width: 70%;
+
+    }
+
+    .planos_container{
+        width: 80%;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+
+    .planos_container .plano{
+        height: fit-content;
+        align-self: self-end;
+    }
+
+    .apresentacao_container {
+        margin: 15px;
+        padding: 0 20px;
+    }
+
+
 }
